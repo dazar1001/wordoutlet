@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.709ad8d4.chunk.css",
+    "main.js": "/static/js/main.6fcd2a82.chunk.js",
+    "main.js.map": "/static/js/main.6fcd2a82.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8f49b074.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8f49b074.js.map",
+    "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
+    "static/js/2.7362dfe8.chunk.js": "/static/js/2.7362dfe8.chunk.js",
+    "static/js/2.7362dfe8.chunk.js.map": "/static/js/2.7362dfe8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.ec02d681.chunk.css.map": "/static/css/2.ec02d681.chunk.css.map",
+    "static/css/main.709ad8d4.chunk.css.map": "/static/css/main.709ad8d4.chunk.css.map",
+    "static/js/2.7362dfe8.chunk.js.LICENSE.txt": "/static/js/2.7362dfe8.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/Larsseit.950af4ed.woff2",
+    "static/media/arrow-forward-outline.ce694b68.svg": "/static/media/arrow-forward-outline.ce694b68.svg",
+    "static/media/basket.fcf2b0d0.svg": "/static/media/basket.fcf2b0d0.svg",
+    "static/media/close-circle.28d3894c.svg": "/static/media/close-circle.28d3894c.svg",
+    "static/media/close-outline.a22b61b1.svg": "/static/media/close-outline.a22b61b1.svg",
+    "static/media/logo-facebook.e82b5050.svg": "/static/media/logo-facebook.e82b5050.svg",
+    "static/media/logo-instagram.d031b68e.svg": "/static/media/logo-instagram.d031b68e.svg",
+    "static/media/logo-pinterest.789320b2.svg": "/static/media/logo-pinterest.789320b2.svg",
+    "static/media/logo-twitter.272e518a.svg": "/static/media/logo-twitter.272e518a.svg",
+    "static/media/menu-outline.539f36be.svg": "/static/media/menu-outline.539f36be.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8f49b074.js",
+    "static/css/2.ec02d681.chunk.css",
+    "static/js/2.7362dfe8.chunk.js",
+    "static/css/main.709ad8d4.chunk.css",
+    "static/js/main.6fcd2a82.chunk.js"
+  ]
+}
