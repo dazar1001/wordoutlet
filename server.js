@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const path = require("path");
 const express = require("express");
 require("dotenv").config();
 const app = express();
@@ -9,7 +10,7 @@ app.use(express.json());
 // for heroku
 app.use(express.static("client/build"));
 app.get("/", (req, res) => {
-	res.sendFile("client/build");
+	res.sendFile(path.join(__dirname, "client/build", "index.html"));
 });
 
 app.use("/api/products", require("./routes/products.routes"));
