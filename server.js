@@ -12,8 +12,8 @@ app.use("/api/media", require("./routes/media.routes"));
 app.use("/api/mail", require("./routes/mail.routes"));
 
 // for heroku
-app.use(express.static(path.join(__dirname, "./client/build")));
-app.get("*", function (_, res) {
+app.use(express.static(path.join(__dirname, "client/build")));
+app.get("/", function (_, res) {
 	res.sendFile(path.join(__dirname, "client/build"), "index.html");
 });
 
