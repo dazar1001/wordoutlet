@@ -1,6 +1,6 @@
 ![WORDOUTLET - Hero](screenshot.png)
 
-## WORDOUTLET - ECOMERCE MERN Application
+## WORDOUTLET - ECOMMERCE MERN Application
 
 ### About
 
