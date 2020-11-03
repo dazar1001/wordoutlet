@@ -8,6 +8,9 @@ app.use(express.json());
 
 // for heroku
 app.use(express.static("client/build"));
+app.get("/", (req, res) => {
+	res.sendFile("client/build");
+});
 
 app.use("/api/products", require("./routes/products.routes"));
 app.use("/api/media", require("./routes/media.routes"));
