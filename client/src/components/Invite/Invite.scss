@@ -1,0 +1,71 @@
+$invite-border-color: #ddd;
+$invite-head-font-size: 32px;
+$invite-head-font-family: Playfair Display;
+$invite-head-font-weight: 500;
+$invite-head-line-height: 1.5;
+$invite-link-color: #555;
+$invite-link-transition: 300ms;
+$invite-link-letter-spacing: 2px;
+
+.invite {
+	display: grid;
+	border-top: 1px solid $invite-border-color;
+	border-bottom: 1px solid $invite-border-color;
+	grid-template-columns: repeat(2, 1fr);
+	&__info {
+		padding: 80px 0 0 45px;
+	}
+	&__head {
+		font-size: $invite-head-font-size;
+		max-width: 70%;
+		font-family: $invite-head-font-family;
+		font-weight: $invite-head-font-weight;
+		line-height: $invite-head-line-height;
+	}
+	&__link {
+		color: $invite-link-color;
+		text-decoration: none;
+		display: flex;
+		align-items: center;
+		margin-top: 50px;
+		letter-spacing: $invite-link-letter-spacing;
+		&:hover {
+			svg {
+				margin-left: 20px;
+			}
+		}
+		svg {
+			transition: $invite-link-transition;
+			margin-left: 10px;
+			width: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1120px) {
+	.invite {
+		&__head {
+			font-size: 24px;
+		}
+	}
+}
+
+@media only screen and (max-width: 820px) {
+	.invite {
+		grid-template-columns: 1fr;
+		&__info {
+			padding: 70px 30px 70px 30px;
+		}
+		&__head {
+			max-width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.invite {
+		&__head {
+			font-size: 23px;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+$price-list-fill-remove-icon: #ddd;
+$price-list-width-remove-icon: 30px;
+$price-list-title-font-family: Playfair Display;
+$price-list-title-font-size: 18px;
+$price-list-title-color: #444;
+$price-list-input-padding: 14px 10px 14px 20px;
+$price-list-input-max-width: 80px;
+$price-list-input-font-size: 16px;
+
+.price-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&__cover {
+		max-width: 120px;
+	}
+
+	&__title {
+		font-family: $price-list-title-font-family;
+		font-size: $price-list-title-font-size;
+		color: $price-list-title-color;
+		margin-right: auto;
+	}
+
+	&__input {
+		padding: $price-list-input-padding;
+		font-family: inherit;
+		max-width: $price-list-input-max-width;
+		font-size: $price-list-input-font-size;
+		margin-right: 20px;
+	}
+
+	&__remove {
+		width: $price-list-width-remove-icon;
+		fill: $price-list-fill-remove-icon;
+		cursor: pointer;
+	}
+}

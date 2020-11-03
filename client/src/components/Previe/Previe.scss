@@ -1,0 +1,72 @@
+$previe-border-color: #ddd;
+$previe-title-font-size: 34px;
+$previe-title-font-weight: 500;
+$previe-title-font-family: Playfair Display;
+$previe-price-font-weight: 300;
+$previe-price-font-size: 16px;
+$previe-price-letter-spacing: 1px;
+$previe-input-padding: 12px 20px;
+$previe-input-font-size: 16px;
+$previe-basket-font-size: 20px;
+$previe-basket-color: #333;
+$previe-basket-color-link: #222;
+$previe-basket-line-height: 1.4;
+
+.previe {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	height: 85vh;
+	border-bottom: 1px solid $previe-border-color;
+
+	&__cover {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-right: 1px solid $previe-border-color;
+		img {
+			max-width: 400px;
+		}
+	}
+
+	&__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+	}
+
+	&__basket {
+		font-size: $previe-basket-font-size;
+		color: $previe-basket-color;
+		line-height: $previe-basket-line-height;
+		a {
+			color: $previe-basket-color-link;
+		}
+	}
+
+	&__input {
+		padding: $previe-input-padding;
+		font-size: $previe-input-font-size;
+		font-family: inherit;
+		margin-bottom: 20px;
+	}
+
+	&__title {
+		font-size: $previe-title-font-size;
+		font-family: $previe-title-font-family;
+		font-weight: $previe-title-font-weight;
+		margin-bottom: 20px;
+	}
+	&__price {
+		font-size: $previe-price-font-size;
+		font-weight: $previe-price-font-weight;
+		letter-spacing: $previe-price-letter-spacing;
+		margin-bottom: 20px;
+	}
+}

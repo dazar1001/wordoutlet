@@ -1,0 +1,34 @@
+$header-border-color: #ddd;
+$header-fill-color: #fff;
+$header-transition-fill: 300ms;
+
+.header {
+	padding: 0 30px;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid $header-border-color;
+	transition: $header-transition-fill;
+	z-index: 10000 !important;
+	&--fill {
+		background: $header-fill-color;
+	}
+
+	&__icon {
+		width: 30px;
+		cursor: pointer;
+		fill: #555;
+	}
+}
+
+@media only screen and (max-width: 360px) {
+	.header {
+		&__logo {
+			max-width: 150px;
+		}
+	}
+}

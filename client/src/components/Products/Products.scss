@@ -1,0 +1,30 @@
+$products-gap: 30px;
+$products-head-font-family: Playfair Display;
+$products-head-font-weight: 500;
+$product-head-color: #222;
+
+.products {
+	padding: 0 60px;
+
+	&__head {
+		font-family: $products-head-font-family;
+		font-weight: $products-head-font-weight;
+		color: $product-head-color;
+		margin-bottom: 70px;
+	}
+
+	&__container {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+		gap: $products-gap;
+	}
+}
+
+@media only screen and (max-width: 420px) {
+	.products {
+		padding: 0 30px;
+		&__container {
+			grid-template-columns: 1fr;
+		}
+	}
+}

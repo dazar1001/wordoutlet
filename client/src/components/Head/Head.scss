@@ -1,0 +1,23 @@
+$head-background-color: #f6f4f0;
+$head-text-font-family: Playfair Display;
+$head-text-font-weight: 500;
+$head-text-font-size: 42px;
+
+.head {
+	padding: 220px 0;
+	text-align: center;
+	background: $head-background-color;
+	&__text {
+		font-family: $head-text-font-family;
+		font-weight: $head-text-font-weight;
+		font-size: $head-text-font-size;
+	}
+}
+
+@media only screen and (max-width: 720px) {
+	.head {
+		&__text {
+			font-size: 28px;
+		}
+	}
+}

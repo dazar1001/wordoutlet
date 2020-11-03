@@ -1,0 +1,15 @@
+$button-background-color: #000000;
+$button-color: #fff;
+$button-letter-spacing: 4px;
+$button-text-transform: uppercase;
+
+.button {
+	border: none;
+	cursor: pointer;
+	padding: 20px 30px;
+	font-family: inherit;
+	color: $button-color;
+	background: $button-background-color;
+	letter-spacing: $button-letter-spacing;
+	text-transform: $button-text-transform;
+}

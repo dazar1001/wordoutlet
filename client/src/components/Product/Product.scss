@@ -1,0 +1,26 @@
+$product-head-font-weight: 500;
+$product-head-font-size: 20px;
+$product-head-text-transform: uppercase;
+$product-head-letter-spacing: 1px;
+$product-head-line-height: 1.5;
+$product-price-font-weight: 400;
+$product-price-font-size: 16px;
+$product-price-letter-spacing: 1px;
+
+.product {
+	color: #444;
+	text-decoration: none;
+
+	&__head {
+		font-size: $product-head-font-size;
+		font-weight: $product-head-font-weight;
+		text-transform: $product-head-text-transform;
+		letter-spacing: $product-head-letter-spacing;
+		line-height: $product-head-line-height;
+	}
+	&__price {
+		font-weight: $product-price-font-weight;
+		font-size: $product-price-font-size;
+		letter-spacing: $product-price-letter-spacing;
+	}
+}
