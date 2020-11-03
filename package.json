@@ -1,35 +1,36 @@
 {
-  "name": "wordoutlet",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node server.js",
-    "server": "npx nodemon server.js",
-    "client": "npm run start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/dazar1001/wordoutlet.git"
-  },
-  "keywords": [
-    "mern"
-  ],
-  "author": "dazar1001",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/dazar1001/wordoutlet/issues"
-  },
-  "homepage": "https://github.com/dazar1001/wordoutlet#readme",
-  "dependencies": {
-    "@types/react-helmet": "^6.1.0",
-    "concurrently": "^5.3.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "mongoose": "^5.10.10",
-    "nodemailer": "^6.4.14",
-    "nodemon": "^2.0.6",
-    "react-scrollbar": "^0.5.6"
-  }
+	"name": "wordoutlet",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node server.js",
+		"server": "npx nodemon server.js",
+		"client": "npm run start --prefix client",
+		"dev": "concurrently \"npm run server\" \"npm run client\"",
+		"client:build": "npm run build --prefix client"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dazar1001/wordoutlet.git"
+	},
+	"keywords": [
+		"mern"
+	],
+	"author": "dazar1001",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dazar1001/wordoutlet/issues"
+	},
+	"homepage": "https://github.com/dazar1001/wordoutlet#readme",
+	"dependencies": {
+		"@types/react-helmet": "^6.1.0",
+		"concurrently": "^5.3.0",
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.10.10",
+		"nodemailer": "^6.4.14",
+		"nodemon": "^2.0.6",
+		"react-scrollbar": "^0.5.6"
+	}
 }

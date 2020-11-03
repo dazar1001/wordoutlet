@@ -9,7 +9,7 @@ import { context } from "../../context";
 import { TOGGLE_MENU } from "../../types";
 
 export default function Header() {
-	const { dispatchMenu } = useContext(context);
+	const { dispatchMenu, stateBasket } = useContext(context);
 	const [scroll, setScroll] = useState(!!window.scrollY);
 
 	useEffect(() => {
@@ -41,6 +41,9 @@ export default function Header() {
 			</Link>
 			<Link className="header__basket" to="/basket">
 				<BasketIcon className="header__icon" />
+				{stateBasket.length > 0 && (
+					<div className="header__count">{stateBasket.length}</div>
+				)}
 			</Link>
 		</header>
 	);

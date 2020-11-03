@@ -1,6 +1,7 @@
 $header-border-color: #ddd;
 $header-fill-color: #fff;
 $header-transition-fill: 300ms;
+$header-icon-color: #555;
 
 .header {
 	padding: 0 30px;
@@ -18,10 +19,25 @@ $header-transition-fill: 300ms;
 		background: $header-fill-color;
 	}
 
+	&__count {
+		position: absolute;
+		background: $header-icon-color;
+		color: #fff;
+		top: 15px;
+		right: 20px;
+		width: 25px;
+		height: 25px;
+		border: 1px solid #fff;
+		border-radius: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
 	&__icon {
 		width: 30px;
 		cursor: pointer;
-		fill: #555;
+		fill: $header-icon-color;
 	}
 }
 

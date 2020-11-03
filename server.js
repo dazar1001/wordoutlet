@@ -6,7 +6,8 @@ const app = express();
 const PORT = process.env.PORT;
 app.use(express.json());
 
-app.use(express.static("client"));
+// for heroku
+app.use(express.static("client/build"));
 
 app.use("/api/products", require("./routes/products.routes"));
 app.use("/api/media", require("./routes/media.routes"));

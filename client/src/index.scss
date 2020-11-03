@@ -3,6 +3,14 @@ $scrollbar-background-color: #fff;
 $thumb-background-color: #ddd;
 $thumb-hover-background-color: #ccc;
 
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Playfair Display"), local("PlayfairDisplay"),
+		url("./fonts/Larsseit.woff2") format("woff2");
+}
+
 * {
 	margin: 0;
 	padding: 0;
