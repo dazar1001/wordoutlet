@@ -1,6 +1,12 @@
 import "./Button.scss";
 
-export default function Button({ top, bottom, children, onClick }) {
+export default function Button({
+	top,
+	bottom,
+	children,
+	onClick,
+	isLoading = false,
+}) {
 	return (
 		<button
 			onClick={onClick}
@@ -8,7 +14,7 @@ export default function Button({ top, bottom, children, onClick }) {
 			className="button"
 			style={{ margin: `${top || 0} 0 ${bottom || 0} 0` }}
 		>
-			{children}
+			{isLoading ? <div className="button__loader"></div> : children}
 		</button>
 	);
 }

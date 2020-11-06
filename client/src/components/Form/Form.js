@@ -6,6 +6,7 @@ import useHttp from "../../hooks/http.hook";
 export default function Form({ top, bottom }) {
 	const { request } = useHttp();
 	const [serverAnswer, setSeverAnswer] = useState({ message: "" });
+	const [isLoading, setLoading] = useState(false);
 	const [form, setForm] = useState({
 		name: "",
 		email: "",
@@ -35,6 +36,7 @@ export default function Form({ top, bottom }) {
 
 	async function formHandler(event) {
 		event.preventDefault();
+		setLoading(true);
 		setSeverAnswer({ message: "" });
 		if (formValidator()) {
 			setSeverAnswer(
@@ -44,6 +46,7 @@ export default function Form({ top, bottom }) {
 					message: form.message,
 				})
 			);
+			setLoading(false);
 		}
 	}
 
@@ -99,7 +102,9 @@ export default function Form({ top, bottom }) {
 				></textarea>
 
 				<div className="form__footer">
-					<Button data-aos="fade-up">Submit</Button>
+					<Button data-aos="fade-up" isLoading={isLoading}>
+						Submit
+					</Button>
 					{serverAnswer.message && (
 						<div className="form__answer" data-aos="fade-up">
 							{serverAnswer.message}
