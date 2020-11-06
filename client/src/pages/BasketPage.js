@@ -4,11 +4,14 @@ import Header from "../components/Header/Header";
 import Nav from "../components/Nav/Nav";
 import Footer from "../components/Footer/Footer";
 import Check from "../components/Check/Check";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { context } from "../context";
 
 export default function BasketPage() {
 	const { stateBasket } = useContext(context);
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 	return (
 		<>
 			<Helmet>
