@@ -41,19 +41,26 @@ export default function Previe({
 		>
 			<div className="previe__cover">
 				<img
+					data-aos="fade-down"
 					src={`${process.env.PUBLIC_URL}/img/products/${image}`}
 					alt={title}
 				/>
 			</div>
 			<div className="previe__info">
 				<div className="previe__container">
-					<h2 className="previe__title">{title}</h2>
-					<b className="previe__price">
+					<h2 className="previe__title" data-aos="fade-down">
+						{title}
+					</h2>
+					<b
+						className="previe__price"
+						data-aos="fade-down"
+						data-aos-delay="600"
+					>
 						{currency} {symbol}
 						{cost}
 					</b>
 					{stateBasket.find((prod) => prod.id === id) ? (
-						<div className="previe__basket">
+						<div className="previe__basket" data-aos="fade-up">
 							The product has been added to the cart, Go to the{" "}
 							<Link to="/basket">basket?</Link>
 						</div>
@@ -65,6 +72,7 @@ export default function Previe({
 								value={count}
 								type="number"
 								min={1}
+								data-aos="fade-down"
 							/>
 							<Button onClick={busketHandler}>ADD TO BAG</Button>
 						</div>

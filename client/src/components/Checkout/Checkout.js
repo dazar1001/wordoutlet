@@ -29,7 +29,7 @@ export default function Checkout({ price, currency, description }) {
 				},
 			})
 			.render(paypal.current);
-	}, []);
+	}, [currency, description, price]);
 
 	return (
 		<div>

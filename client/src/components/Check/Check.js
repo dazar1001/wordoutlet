@@ -27,7 +27,7 @@ export default function Check({ products, top, bottom }) {
 	function checkoutHandler() {
 		let desc = "";
 		desc = stateBasket.map((prod) => `${prod.title} - ${prod.count}pie`);
-		setDesc(desc.join(","));
+		setDesc(desc.join(", "));
 		products.map((prod) => {
 			total += prod.cost * prod.count;
 			return prod;
