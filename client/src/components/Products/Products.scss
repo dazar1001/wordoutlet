@@ -5,6 +5,7 @@ $product-head-color: #222;
 
 .products {
 	padding: 0 60px;
+	min-height: 400px;
 
 	&__head {
 		font-family: $products-head-font-family;
