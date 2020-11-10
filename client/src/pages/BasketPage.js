@@ -15,11 +15,11 @@ export default function BasketPage() {
 	return (
 		<>
 			<Helmet>
-				<title>WORDOUTLET // Basket</title>
+				<title>WORDOUTLET | Basket</title>
 			</Helmet>
 			<Header />
 			<Nav />
-			<Check products={stateBasket} top="120px" />
+			<Check products={stateBasket} top="150px" />
 			<Footer top="200px" />
 		</>
 	);

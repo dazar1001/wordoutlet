@@ -18,6 +18,7 @@ export default function PriceList({
 	symbol,
 	top,
 	bottom,
+	index,
 }) {
 	const { dispatchBasket } = useContext(context);
 	const [price, setPrice] = useState(0);
@@ -42,6 +43,8 @@ export default function PriceList({
 
 	return (
 		<div
+			data-aos="fade-up"
+			data-aos-delay={index * 1 + 500}
 			key={id}
 			className="price-list"
 			style={{ margin: `${top || 0} 0 ${bottom || 0} 0` }}

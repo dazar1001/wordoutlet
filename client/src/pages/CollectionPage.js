@@ -25,7 +25,7 @@ export default function CollectionPage() {
 	return (
 		<>
 			<Helmet>
-				<title>WORDOUTLET // Collection</title>
+				<title>WORDOUTLET | Collection</title>
 			</Helmet>
 			<Header />
 			<Nav />

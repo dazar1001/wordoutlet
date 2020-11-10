@@ -14,7 +14,7 @@ export default function ContactPage() {
 	return (
 		<>
 			<Helmet>
-				<title>WORDOUTLET // Contact</title>
+				<title>WORDOUTLET | Contact</title>
 			</Helmet>
 			<Header />
 			<Nav />

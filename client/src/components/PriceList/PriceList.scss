@@ -1,11 +1,16 @@
 $price-list-fill-remove-icon: #ddd;
 $price-list-width-remove-icon: 30px;
 $price-list-title-font-family: Playfair Display;
+$price-list-title-letter-spacing: 1px;
+$price-list-title-font-weight: 600;
 $price-list-title-font-size: 18px;
-$price-list-title-color: #444;
+$price-list-title-color: #222;
 $price-list-input-padding: 14px 10px 14px 20px;
 $price-list-input-max-width: 80px;
 $price-list-input-font-size: 16px;
+
+$price-list-cost-letter-spacing: 1px;
+$price-list-cost-font-weight: 500;
 
 .price-list {
 	display: flex;
@@ -16,11 +21,18 @@ $price-list-input-font-size: 16px;
 		max-width: 120px;
 	}
 
+	&__cost {
+		letter-spacing: $price-list-cost-letter-spacing;
+		font-weight: $price-list-cost-font-weight;
+	}
+
 	&__title {
 		font-family: $price-list-title-font-family;
 		font-size: $price-list-title-font-size;
 		color: $price-list-title-color;
+		font-weight: $price-list-title-font-weight;
 		margin-right: auto;
+		letter-spacing: $price-list-title-letter-spacing;
 	}
 
 	&__input {

@@ -27,7 +27,7 @@ export default function ProductPage() {
 	return (
 		<>
 			<Helmet>
-				<title>WORDOUTLET // {product.title}</title>
+				<title>WORDOUTLET | {product.title}</title>
 			</Helmet>
 			<Header />
 			<Nav />

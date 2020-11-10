@@ -42,17 +42,18 @@ export default function Check({ products, top, bottom }) {
 			style={{ margin: `${top || 0} auto ${bottom || 0} auto` }}
 		>
 			<div className="check__header">
-				<h2 className="check__total">Total</h2>
+				<h2 className="check__head">My Basket</h2>
 				<b className="check__price">
 					{products.length > 0 &&
-						products[0].currency + " " + products[0].symbol}
+						"Total: " + products[0].currency + " " + products[0].symbol}
 					{products.length ? totalPrice : ""}
 				</b>
 			</div>
 			<div className="check__body">
 				{!products.length && "Basket is empty now"}
-				{products.map((product, i) => (
+				{products.map((product, index) => (
 					<PriceList
+						index={index}
 						key={product.id}
 						id={product.id}
 						image={product.image}

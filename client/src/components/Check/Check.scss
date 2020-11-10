@@ -1,11 +1,27 @@
+$check-head-font-family: Playfair Display;
+$check-head-font-weight: 500;
+$check-price-font-weight: 500;
+$check-price-letter-spacing: 1px;
+
 .check {
 	max-width: 720px;
 	padding: 0 30px;
+	min-height: 40vh;
 
 	&__header {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+	}
+
+	&__head {
+		font-family: $check-head-font-family;
+		font-weight: $check-head-font-weight;
+	}
+
+	&__price {
+		font-weight: $check-price-font-weight;
+		letter-spacing: $check-price-letter-spacing;
 	}
 
 	&__footer {
